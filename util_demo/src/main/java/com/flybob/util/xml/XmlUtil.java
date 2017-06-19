@@ -177,7 +177,7 @@ public class XmlUtil {
     }
     /**
      * 对象转XML
-     * @param to 对象
+     * @param obj 对象
      * @return 字符串
      */
     public static String beanToXml(Object obj)  {
