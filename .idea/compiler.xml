@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Util-Demo" />
+        <module name="util_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
