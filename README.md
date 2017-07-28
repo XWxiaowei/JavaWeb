@@ -7,3 +7,4 @@ JavaWeb学习的相关Demo,有参考大牛的，有自己写的。
 
 2017/07/22
 添加了jackson的demo,自定义Spring MVC 的消息转换器
+相关博客：http://www.cnblogs.com/Fly-Bob/p/7218006.html
