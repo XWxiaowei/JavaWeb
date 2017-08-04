@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
- * Author: wangguangyao@cmhi.chinamobile.com
+ * Author: jay.xiang
  * Project: mall-platform
  * Date: 2017-05-19
  * Time: 14:29
