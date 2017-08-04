@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 /**
  * Author: jay.xiang
- * Project: mall-platform
  * Date: 2017-05-19
  * Time: 14:29
  */
