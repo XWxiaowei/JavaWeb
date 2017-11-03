@@ -13,6 +13,7 @@
     <jdk.version>1.7</jdk.version>
     <struts.version>2.3.24.1</struts.version>
     <powermock.version>1.7.1</powermock.version>
+    <log4j.version>2.7</log4j.version>
   </properties>
   <dependencies>
     <!--servlet 3.1.0对应的JDK为1.7-->
@@ -134,12 +135,12 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>${log4j.versin}</version>
+      <version>${log4j.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>${log4j.versin}</version>
+      <version>${log4j.version}</version>
     </dependency>
     <!--******************单元测试相关依赖****************************-->
     <dependency>
