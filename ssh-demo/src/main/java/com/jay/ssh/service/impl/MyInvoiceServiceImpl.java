@@ -20,9 +20,7 @@ import java.util.Map;
  */
 @Service("myInvoiceService")
 public class MyInvoiceServiceImpl implements MyInvoiceService {
-    /**
-     * 基础信息系统项目地址
-     */
+
     private static String baseDataUrl="http://localhost:9090/base_rpc";
 
 

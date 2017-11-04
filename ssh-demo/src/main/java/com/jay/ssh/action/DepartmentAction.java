@@ -40,7 +40,6 @@ public class DepartmentAction  extends BaseAction{
 
     public String findAll() {
         departmentList= departmentService.findAll();
-        //使用的是模型驱动，把部门信息放入值栈，才可以使用OGNL表达式来获取
         return "findAll";
     }
 
