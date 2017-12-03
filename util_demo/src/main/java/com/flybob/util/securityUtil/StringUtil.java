@@ -1,5 +1,6 @@
 package com.flybob.util.securityUtil;
 
+
 import com.alibaba.fastjson.JSONObject;
 
 import java.io.UnsupportedEncodingException;
