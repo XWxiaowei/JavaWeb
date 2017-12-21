@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="jackson-demo:war">
-    <output-path>$PROJECT_DIR$/jackson-demo/target</output-path>
-    <root id="archive" name="jackson-demo.war">
-      <element id="artifact" artifact-name="jackson-demo:war exploded" />
-    </root>
-  </artifact>
-</component>
