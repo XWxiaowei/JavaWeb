@@ -178,7 +178,7 @@ public class SpringTxServiceTest {
     @Test
     public void testTxRollbackInnerTxRollbackPropagationNotSupport2() throws Exception {
         springTxService.txRollbackInnerTxRollbackPropagationNotSupport2();
-        Assert.assertEquals(3,springTxService.mysqlConnection());
+        Assert.assertEquals(2,springTxService.mysqlConnection());
     }
     /**
      * PROPAGATION_SUPPORTS：如果当前事务上下文中没有事务，
