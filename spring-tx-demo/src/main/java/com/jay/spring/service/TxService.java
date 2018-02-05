@@ -10,15 +10,9 @@ import java.util.List;
  * @create 2018/2/5 11:01
  */
 public interface TxService {
-    /**
-     * @param calabashBoyList
-     * @param userList
-     * @return
-     */
-    public int saveBoyBatch(List<CalabashBoy> calabashBoyList,List<User> userList);
 
     /**
      * @return
      */
-    public int getBoyBatch();
+    public int getBoyBatch() throws Exception;
 }

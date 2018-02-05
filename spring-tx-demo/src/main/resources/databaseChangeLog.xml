@@ -13,7 +13,7 @@
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="varchar(50)"/>
+            <column name="name" type="varchar(32)"/>
             <column name="mana" type="int" defaultValue="0"/>
         </createTable>
     </changeSet>
@@ -22,8 +22,8 @@
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="varchar(32)"/>
-            <column name="password" type="varchar(32)"/>
+            <column name="name" type="varchar(8)"/>
+            <column name="password" type="varchar(8)"/>
             <column name="age" type="int"/>
         </createTable>
     </changeSet>
