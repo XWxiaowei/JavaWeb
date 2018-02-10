@@ -9,5 +9,5 @@
                      ">
 
     <!--配置扫描包+自动注入-->
-    <context:component-scan base-package="com.jay.hessian"/>
+    <context:component-scan base-package="com.jay"/>
 </beans>
