@@ -2,8 +2,7 @@ package com.jay.hessian;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.remoting.caucho.HessianExporter;
-import org.springframework.stereotype.Component;
+import org.springframework.remoting.caucho.HessianServiceExporter;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -16,9 +15,13 @@ public class HessianServer {
     @Autowired
     private UserService userService;
 
+    /**
+     *
+     * @return
+     */
     @Bean(name = "/userService1.hs")
-    public HessianExporter getUserService() {
-        HessianExporter exporter = new HessianExporter();
+    public HessianServiceExporter getUserService() {
+        HessianServiceExporter exporter = new HessianServiceExporter();
         //Hessian服务的接口
         exporter.setServiceInterface(UserService.class);
         //Hessian服务的接口Impl
