@@ -20,6 +20,13 @@
       <artifactId>hessian</artifactId>
       <version>4.0.7</version>
     </dependency>
+    <dependency>
+      <groupId>com.jay</groupId>
+      <artifactId>hessian-server-rpc</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/java/lib/hessian-server-rpc.jar</systemPath>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>

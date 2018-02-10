@@ -1,5 +1,6 @@
-package com.jay.hessian;
+package com.jay;
 
+import com.jay.hessian.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.remoting.caucho.HessianServiceExporter;
@@ -19,7 +20,7 @@ public class HessianServer {
      *
      * @return
      */
-    @Bean(name = "/userService1.hs")
+    @Bean(name = "/userService.hs")
     public HessianServiceExporter getUserService() {
         HessianServiceExporter exporter = new HessianServiceExporter();
         //Hessian服务的接口

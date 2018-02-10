@@ -1,5 +1,7 @@
-package com.jay.hessian;
+package com.jay;
 
+import com.jay.hessian.User;
+import com.jay.hessian.UserService;
 import org.springframework.stereotype.Service;
 
 /**
