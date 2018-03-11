@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
     public static void main(String[] agrs){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("aop01.xml");
-        Math math=ctx.getBean("math",Math.class);
+        com.jay.springAOP.aop01.Math math=ctx.getBean("math", com.jay.springAOP.aop01.Math.class);
         int n1=100,n2=5;
         math.add(n1, n2);
         math.sub(n1, n2);

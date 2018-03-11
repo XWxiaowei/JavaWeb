@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hessian-client-demo/hessian-client-demo.iml" filepath="$PROJECT_DIR$/hessian-client-demo/hessian-client-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hessian-server-demo/hessian-server-demo.iml" filepath="$PROJECT_DIR$/hessian-server-demo/hessian-server-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-aop-demo/spring-aop-demo.iml" filepath="$PROJECT_DIR$/spring-aop-demo/spring-aop-demo.iml" />
+    </modules>
+  </component>
+</project>

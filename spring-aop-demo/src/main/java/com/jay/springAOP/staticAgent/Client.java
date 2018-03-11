@@ -1,8 +1,8 @@
 package com.jay.springAOP.staticAgent;
 
-import com.jay.springAOP.staticAgent.impl.UserServiceImpl;
 import com.jay.springAOP.staticAgent.impl.UserServiceProxyImpl;
 import com.jay.springAOP.staticAgent.model.User;
+import com.jay.springAOP.staticAgent.impl.UserServiceImpl;
 
 /**
  * Created by xiang.wei on 2017/8/16.

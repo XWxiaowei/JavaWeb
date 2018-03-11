@@ -1,0 +1,35 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3 http://maven.apache.org/xsd/assembly-1.1.3.xsd">
+    <formats>
+        <format>jar</format>
+    </formats>
+    <!--指定是否包含打包层目录（比如finalName是output，当值为true，
+    所有文件被放在output目录下，否则直接放在包的根目录下）-->
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <!--<dependencySets>-->
+        <!--<dependencySet>-->
+            <!--<outputDirectory>/target</outputDirectory>-->
+        <!--</dependencySet>-->
+    <!--</dependencySets>-->
+
+    <fileSets>
+        <!--要排除某个目录下所有的txt文件：-->
+        <!--<fileSet>-->
+            <!--<directory>${project.build.directory}/classes</directory>-->
+            <!--<outputDirectory>/</outputDirectory>-->
+            <!--<excludes>-->
+                <!--<exclude>**/*.txt</exclude>-->
+            <!--</excludes>-->
+        <!--</fileSet>-->
+        <!--某个目录下只想要.class文件-->
+       <fileSet>
+           <directory>${project.build.directory}/classes</directory>
+           <outputDirectory>/</outputDirectory>
+           <includes>
+               <include>com/jay/hessian/*.class</include>
+           </includes>
+       </fileSet>
+    </fileSets>
+
+</assembly>
