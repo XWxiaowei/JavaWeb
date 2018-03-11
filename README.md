@@ -14,4 +14,3 @@ spring-tx_demo 的博客地址：http://www.cnblogs.com/Fly-Bob/p/7347206.html
 
 springAOP-demo 的博客地址:http://www.cnblogs.com/Fly-Bob/p/7368129.html
 
-测试
