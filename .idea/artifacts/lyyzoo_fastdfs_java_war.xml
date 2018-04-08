@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lyyzoo-fastdfs-java:war">
+    <output-path>$PROJECT_DIR$/lyyzoo-fastdfs-java/target</output-path>
+    <root id="archive" name="lyyzoo-fastdfs-java.war">
+      <element id="artifact" artifact-name="lyyzoo-fastdfs-java:war exploded" />
+    </root>
+  </artifact>
+</component>
