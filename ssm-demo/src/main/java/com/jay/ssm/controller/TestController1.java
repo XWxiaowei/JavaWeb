@@ -9,7 +9,7 @@ import java.util.Set;
 
 /**
  * Created by xiang.wei on 2018/6/3
- *
+ *  Controller中加参数
  * @author xiang.wei
  */
 @Controller
@@ -17,7 +17,7 @@ public class TestController1 {
 
     public static Set<String> set = new HashSet<>();
 
-    @RequestMapping("/test.do")
+    @RequestMapping("/test1.do")
     public void  test(HttpServletRequest request) throws InterruptedException {
 //        判断线程安全
         String value = request.getParameter("key");

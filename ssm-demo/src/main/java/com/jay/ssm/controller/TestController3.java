@@ -1,36 +1,32 @@
 package com.jay.ssm.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by xiang.wei on 2018/6/3
- * 自动注入的方式
+ *
  * @author xiang.wei
  */
 @Controller
-public class TestController2 {
-    @Autowired
-    private HttpServletRequest request;
+public class TestController3 extends BaseController {
+    // 存储已有参数，用于判断参数value是否重复，从而判断线程是否安全
     public static Set<String> set = new HashSet<>();
 
-    @RequestMapping("/test2.do")
-    public void test() throws InterruptedException{
-//        判断线程安全
+    @RequestMapping("/test3.do")
+    public void test() throws InterruptedException {
         String value = request.getParameter("key");
+        // 判断线程安全
         if (set.contains(value)) {
-            System.out.println(value + "\t重复出现，request不安全");
+            System.out.println(value + "\t重复出现，request并发不安全！");
         } else {
             System.out.println(value);
             set.add(value);
         }
-
-        //模拟程序执行了一段时间
+        // 模拟程序执行了一段时间
         Thread.sleep(1000);
     }
 }

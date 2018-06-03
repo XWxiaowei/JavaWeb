@@ -12,7 +12,7 @@ import java.util.UUID;
  *
  * @author xiang.wei
  */
-public class TestController1Test {
+public class TestController34Test {
     public static void main(String[] args) throws Exception {
         String prefix = UUID.randomUUID().toString().replaceAll("-", "") + "::";
         for (int i = 0; i < 1000; i++) {
@@ -22,13 +22,34 @@ public class TestController1Test {
                 public void run() {
                     try {
                         CloseableHttpClient httpClient = HttpClients.createDefault();
-                        HttpGet httpGet = new HttpGet("http://localhost:8080/test1.do?key=" + value);
+                        HttpGet httpGet = new HttpGet("http://localhost:8080/test3.do?key=" + value);
                         httpClient.execute(httpGet);
                         httpClient.close();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
+            }.start();
+
+        }
+
+        String prefix1 = UUID.randomUUID().toString().replaceAll("-", "") + "::";
+        for (int i = 0; i < 1000; i++) {
+            final String value = prefix1 + i;
+
+            new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        CloseableHttpClient httpClient = HttpClients.createDefault();
+                        HttpGet httpGet = new HttpGet("http://localhost:8080/test4.do?key=" + value);
+                        httpClient.execute(httpGet);
+                        httpClient.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
             }.start();
         }
     }
