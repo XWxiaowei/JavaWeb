@@ -3,4 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="studentService" class="com.jay.ssm.service.StudentService"></bean>
+
+    <bean id="beanPostProcessor" class="com.jay.ssm.beandemo.MyBeanPostProcessor"></bean>
+
+    <bean id="instantiationAwareBeanPostProcessor" class="com.jay.ssm.beandemo.MyInstantiationAwareBeanPostProcessor"></bean>
+
+    <bean id="beanFactoryPostProcessor" class="com.jay.ssm.beandemo.MyBeanFactoryPostProcessor"></bean>
+
+    <bean id="person" class="com.jay.ssm.beandemo.Person" init-method="myInit"
+     destroy-method="myDestroy" scope="singleton">
+        <property name="name" value="张三"/>
+        <property name="address" value="杭州"/>
+        <property name="phone" value="123456789123"/>
+    </bean>
 </beans>
